@@ -1,5 +1,7 @@
 -- Neovim options
 
+vim.g.bigfile_size = 1024*1024*1 -- 1M
+
 -- Nerd font
 vim.g.have_nerd_font = true
 
