@@ -8,3 +8,5 @@ vim.keymap.set('n', 'gl', function () vim.diagnostic.open_float() end, { desc = 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Find and replace" })
 
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G', { desc = 'Select all' })
+
+vim.keymap.set('n', '<leader>cf', function () require('confirm').format() end, { desc = "Format current file" })
