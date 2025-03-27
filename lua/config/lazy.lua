@@ -62,3 +62,5 @@ require("config.keymap")
 
 -- Toggle Showkey on start
 vim.cmd("ShowkeysToggle")
+
+-- Toggle tabline
