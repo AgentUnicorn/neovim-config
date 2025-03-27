@@ -8,6 +8,8 @@ vim.keymap.set("n", "gl", function()
 end, { desc = "Open diagnostic in float" })
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Back to Neovim Explorer" })
 
+-- Disable whichkey behavior
+
 -- Code
 vim.keymap.set("n", "<leader>cf", function()
 	require("conform").format({
