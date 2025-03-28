@@ -23,7 +23,6 @@ return {
 				auto_show = false,
 			},
 		},
-		signature = { enable = true },
 		cmdline = {
 			keymap = {
 				["<Tab>"] = { "accept" },
