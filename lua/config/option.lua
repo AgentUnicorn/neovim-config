@@ -1,6 +1,6 @@
 -- Neovim options
 
-vim.g.bigfile_size = 1024*1024*1 -- 1M
+vim.g.bigfile_size = 1024 * 1024 * 1 -- 1M
 
 -- Nerd font
 vim.g.have_nerd_font = true
@@ -28,7 +28,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep sign column on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -41,14 +41,14 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = "split"
 
 -- Ask for confirmation for operation that would fail due to unsaved changes in the buffer
 vim.opt.confirm = true
 
 -- Sets how neovim will display certain whitespace characters in the editor
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.list = false
+vim.opt.listchars = { trail = "·", nbsp = "␣" }
 
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4

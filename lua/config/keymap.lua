@@ -47,3 +47,20 @@ vim.keymap.set("v", "<A-Up>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<
 
 -- Projects management (FzfLua and NeovimProject)
 vim.keymap.set("n", "<leader>pf", ":FzfLua files<CR>", { desc = "Find files in your current working project" })
+
+-- NeovimTree
+vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Open or close the tree" })
+vim.keymap.set(
+	"n",
+	"<leader>eb",
+	"<cmd>NvimTreeFocus<CR>",
+	{ desc = "Open the tree if it is close, then focus on the tree" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>ef",
+	"<cmd>NvimTreeFindFileToggle<CR>",
+	{ desc = "Move the cursor in the tree for the current buffer," }
+)
+vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse the tree recursively" })
+vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
