@@ -45,8 +45,9 @@ vim.keymap.set("i", "<A-Up>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
 vim.keymap.set("v", "<A-Down>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
 vim.keymap.set("v", "<A-Up>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
 
--- Projects management (FzfLua and NeovimProject)
+-- FzfLua
 vim.keymap.set("n", "<leader>pf", ":FzfLua files<CR>", { desc = "Find files in your current working project" })
+vim.keymap.set("n", "<leader>pl", ":FzfLua live_grep<CR>", { desc = "Find text in files in current working project" })
 
 -- NeovimTree
 vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Open or close the tree" })
