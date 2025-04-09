@@ -16,3 +16,9 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa:" .. esc .. "la, " .. esc .. "pl")
 	end,
 })
+
+-- Augment projects
+vim.g.augment_workspace_folders = {
+	"D:/ai-writer/ai-writer-fe",
+	"D:/ai-writer/ai-writer-be",
+}
