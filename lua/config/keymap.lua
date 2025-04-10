@@ -47,6 +47,7 @@ vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard"
 
 local wk = require("which-key")
 local harpoon = require("harpoon")
+local windowPicker = require("window-picker")
 
 wk.add({
 	{
@@ -207,6 +208,19 @@ wk.add({
 			"<leader>act",
 			":Augment chat-toggle<CR>",
 			desc = "Toggle the chat panel visibility",
+		},
+
+		-- Window
+		{
+			"<leader>w",
+			group = "Window",
+		},
+		{
+			"<leader>wj",
+			function()
+				windowPicker.pick_window()
+			end,
+			desc = "Show window letter",
 		},
 	},
 })
