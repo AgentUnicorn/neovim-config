@@ -209,6 +209,11 @@ wk.add({
 			":Augment chat-toggle<CR>",
 			desc = "Toggle the chat panel visibility",
 		},
+		{
+			"<C-y>",
+			"<cmd>call augment#Accept()<CR>",
+			desc = "Accept completion",
+		},
 
 		-- Window
 		{
