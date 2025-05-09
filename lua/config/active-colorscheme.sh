@@ -29,13 +29,13 @@ linkarzu_color23=#2d1c08
 # usually set to color10 which is the terminal background
 linkarzu_color26=#0D1116
 
-linkarzu_color04=#987afb
+linkarzu_color01=#fca6ff
 linkarzu_color02=#37f499
 linkarzu_color03=#04d1f9
-linkarzu_color01=#fca6ff
+linkarzu_color04=#987afb
 linkarzu_color05=#9ad900
-linkarzu_color08=#e58f2a
 linkarzu_color06=#05ff23
+linkarzu_color08=#e58f2a
 
 # Colors to the right from https://www.colorhexa.com
 # Terminal and neovim background

@@ -12,6 +12,7 @@ return {
 	lazy = true,
 	name = "eldritch",
 	opts = {
+		transparent = true,
 		terminal_colors = true,
 		-- Overriding colors globally using a definitions table
 		on_colors = function(global_colors)
