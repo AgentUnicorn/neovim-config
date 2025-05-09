@@ -1,10 +1,12 @@
 return {
 	"navarasu/onedark.nvim",
+	priority = 1000,
 	config = function()
 		require("onedark").setup({
 			style = "deep",
-			transparent = "true",
+			transparent = "false",
 		})
-		vim.cmd("colorscheme onedark")
+		-- Enable theme
+		require("onedark").load()
 	end,
 }

@@ -12,6 +12,7 @@ return {
 	lazy = true,
 	name = "eldritch",
 	opts = {
+		terminal_colors = true,
 		-- Overriding colors globally using a definitions table
 		on_colors = function(global_colors)
 			-- Define all color overrides in a single table
@@ -124,6 +125,7 @@ return {
 				NeoTreeNormalNC = { bg = colors["linkarzu_color10"] },
 				NeoTreeNormal = { bg = colors["linkarzu_color10"] },
 				NvimTreeWinSeparator = { fg = colors["linkarzu_color10"], bg = colors["linkarzu_color10"] },
+				NvimTreeVertSplit = { fg = colors["linkarzu_color10"], bg = colors["linkarzu_color10"] },
 				NvimTreeNormalNC = { bg = colors["linkarzu_color10"] },
 				NvimTreeNormal = { bg = colors["linkarzu_color10"] },
 				TroubleNormal = { bg = colors["linkarzu_color10"] },
@@ -195,6 +197,9 @@ return {
 				TelescopeNormal = { fg = colors["linkarzu_color14"], bg = colors["linkarzu_color10"] },
 				TelescopeMultiSelection = { fg = colors["linkarzu_color02"], bg = colors["linkarzu_color10"] },
 				TelescopeSelection = { fg = colors["linkarzu_color14"], bg = colors["linkarzu_color13"] },
+
+				VertSplit = { fg = colors["linkarzu_color02"] },
+				WinSeparator = { fg = colors["linkarzu_color02"], bold = true },
 			}
 
 			-- Apply all highlight definitions at once

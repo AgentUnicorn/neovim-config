@@ -48,6 +48,7 @@ vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard"
 local wk = require("which-key")
 local harpoon = require("harpoon")
 local windowPicker = require("window-picker")
+local trouble = require("trouble")
 
 wk.add({
 	{
@@ -226,6 +227,58 @@ wk.add({
 				windowPicker.pick_window()
 			end,
 			desc = "Show window letter",
+		},
+
+		-- Trouble
+		{
+			"<leader>x",
+			group = "Trouble",
+		},
+		{
+			"<leader>xx",
+			function()
+				trouble.toggle("diagnostics")
+			end,
+			desc = "Diagnostics (Trouble)",
+		},
+		{
+			"<leader>xX",
+			function()
+				trouble.toggle("diagnostics", { filter = { buf = 0 } })
+			end,
+			desc = "Buffer Diagnostics (Trouble)",
+		},
+		{
+			"<leader>xL",
+			function()
+				trouble.toggle("loclist")
+			end,
+			desc = "Location List (Trouble)",
+		},
+		{
+			"<leader>xQ",
+			function()
+				trouble.toggle("qflist")
+			end,
+			desc = "Quickfix List (Trouble)",
+		},
+		{
+			"<leader>c",
+			group = "Code action",
+		},
+		{
+			"<leader>cs",
+			function()
+				trouble.toggle("symbols", { focus = false })
+			end,
+			desc = "Symbols (Trouble)",
+		},
+		{
+			"<leader>cl",
+			function()
+				trouble.toggle("lsp", { focus = false, win = { position = "right" } })
+			end,
+			desc = "LSP Definitions / references / ... (Trouble)",
 		},
 	},
 })
